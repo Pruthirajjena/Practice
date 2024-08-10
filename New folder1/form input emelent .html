@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>form input</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css ">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <script type="text/javascript">
+            
+            
+        </script>
+    </head>
+    <body class="container-fluid"> 
+        <h2>FORM INPUT DEMO</h2>
+        <button class=" btn btn-primary" data-bs-toggle="modal" data-bs-target="#newproduct"> Add new product</button>
+        <div class="modal fade" id="newproduct">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Add new product</h2>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt>Name</dt>
+                            <dd><input type="text" class="form-control"></dd>
+                            <dt>price</dt>
+                            <dd><input type="text" class="form-control"></dd>
+                            <dt>stock</dt>
+                            <dd><input type="checkbox" class="form-check-input"> Available</dd>
+                            <dt>shipped to</dt>
+                            <dd> 
+                                <select>
+                                    <option>New delhi</option>
+                                    <option>Hyderabad</option>
+                                    <option>Mumbai</option>
+                                </select>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary">Add product</button>
+                        <button  class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="../node_modules/jquery/dist/jquery.js " ></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js "></script>
+    </body>
+</html>
